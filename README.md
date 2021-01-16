@@ -6,15 +6,16 @@
 .
 ├── README.md                 READMEファイル
 ├── Dockerfile                Dockerファイル
+├── notebook                  jupyter notebook
 └── data                      dataファイル
 ```
 
 ## 環境構築
-### Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/Darts）
+Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/Darts）
 ```
 cd Desktop/Darts
 ```
-### Dockerによる環境構築
+Dockerによる環境構築
 ```
 docker build .
 ```
