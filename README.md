@@ -5,26 +5,27 @@
 ```
 .
 ├── README.md                 READMEファイル
+├── .dockerignore        
 ├── Dockerfile                Dockerファイル
+├── docker-compose.yml
 ├── notebook                  jupyter notebook
 └── data                      dataファイル
 ```
 
 ## 環境構築
-Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/Darts）
+
+* Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/Darts）
 ```
 cd Desktop/Darts
 ```
-Dockerによる環境構築
+
+* Dockerによる環境構築（フォルダをマウント：Desktop/Darts）
 ```
-docker build .
+docker-compose up --build
 ```
-docker run実行（対象フォルダをマウントする／例：Desktop/Darts）
-```
-docker run -p 8888:8888 -v ~/Desktop/Darts/:/work --name Darts <docker image>
-```
-ブラウザーを立ち上げてlocalhost:8888へアクセス
-workフォルダ内が対象フォルダにマウントされている
+
+* ブラウザーを立ち上げてlocalhost:8888へアクセス
+* ローカルフォルダがマウントされている
 
 ## jupyter notebook説明
 * Darts.ipynb : 時系列解析(Darts)のnotebook
