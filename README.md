@@ -21,7 +21,7 @@ cd Desktop/Darts
 
 * Dockerによる環境構築（フォルダをマウント：Desktop/Darts）
 ```
-docker-compose up
+docker-compose up --build
 ```
 
 * ブラウザーを立ち上げてlocalhost:8888へアクセス
