@@ -16,7 +16,8 @@ RUN python -m pip install --upgrade pip && pip install \
     ipython \
     scikit-learn \
     pandas \
-    jupyterlab
+    jupyterlab \
+    ipywidgets
 
 # Dartsのパッケージ
 RUN pip install 'u8darts[all]'
