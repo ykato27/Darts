@@ -1,5 +1,5 @@
-# Darts
-* Dartsを活用した時系列解析のプログラム
+# AutoML-Darts
+* AutoML-Dartsを活用した時系列解析のプログラム
 
 ## リポジトリ構成
 ```
@@ -14,12 +14,12 @@
 
 ## 環境構築
 
-* Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/Darts）
+* Dockderfileがあるホスト側のフォルダへ移動（例：Desktop/AutoML-Darts）
 ```
-cd Desktop/Darts
+cd Desktop/AutoML-Darts
 ```
 
-* Dockerによる環境構築（フォルダをマウント：Desktop/Darts）
+* Dockerによる環境構築（フォルダをマウント：Desktop/AutoML-Darts）
 ```
 docker-compose up --build
 ```
@@ -28,7 +28,7 @@ docker-compose up --build
 * ローカルフォルダがマウントされている
 
 ## jupyter notebook説明
-* Darts.ipynb : 時系列解析(Darts)のnotebook
+* Time-Series-Forecasting-Darts.ipynb : 時系列解析(Darts)のnotebook
 
 ## 動作環境
 マシンスペック（Mac)
